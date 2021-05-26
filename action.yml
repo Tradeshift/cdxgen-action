@@ -1,0 +1,20 @@
+name: 'cdxgen-action'
+description: 'cdxgen with upload to license server'
+author: 'Soren Mathiasen'
+inputs:
+  server_url:  
+    description: 'url to the server'
+    required: true
+  fetch_licenses:  
+    description: 'should we fetch the licenses'
+    required: true
+    default: 'true'
+  token:  
+    description: 'auth token for the server upload'
+    required: false
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/sorenmat/cdxgen/cdxgen:latest'
+branding:
+  icon: 'check-square'
+  color: 'blue'
