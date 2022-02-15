@@ -7,7 +7,6 @@ inputs:
     required: true
   fetch_licenses:  
     description: 'should we fetch the licenses'
-    required: true
     default: 'true'
   token:  
     description: 'auth token for the server upload'
