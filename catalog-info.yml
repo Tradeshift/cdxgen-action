@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cdxgen-action
+  description: |
+    action for cdxgen with upload to license server
+  annotations:
+    github.com/project-slug: Tradeshift/cdxgen-action
+  tags:
+    - github-action
+    - fork
+spec:
+  type: library
+  owner: developer-productivity
+  lifecycle: experimental
